@@ -94,7 +94,8 @@ if(isset($_POST['update'])){
                     <td><?php echo $key['age']?></td>
                     <td><?php echo $key['name']?></td>
                     <td>
-                        <a href="index.php?id=<?php echo $key['user_id'];?>">Xóa</a>
+                        <a href="index.php?id=<?php echo $key['user_id'];?>"
+                            onclick="return confirm ('bạn đã chắc chưa :)')">Xóa</a>
                         <a href="index.php?add_id=<?php echo $key['user_id']; ?>">Update</a>
                     </td>
                     < </tr>
